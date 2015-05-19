@@ -4,11 +4,11 @@ class TagCloudController < ApplicationController
   end
   
   def show
-    if LoginConcern.user(params[:user_id]).is_signed_in
-      render Tag.find(params[:id]).count
-    else
-      redirect_to_root
-    end
+    #if LoginConcern.user(params[:user_id]).is_signed_in
+    #  render Tag.find(params[:id]).count
+    #else
+    #  redirect_to_root
+    #end
   end
   
   def create
