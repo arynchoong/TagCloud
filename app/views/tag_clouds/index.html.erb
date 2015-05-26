@@ -1,0 +1,14 @@
+<h1>TagCloud#index</h1>
+<p></p>
+<%= form_tag do %>
+  <%= label_tag(:words, "Create tag cloud for:") %>
+  <%= text_field_tag(:words) %>
+  <%= submit_tag("Generate") %>
+<% end %>
+
+<%= form_tag do %>
+  <%= label_tag(:uri, "Create tag cloud from uri:") %>
+  <%= text_field_tag(:uri) %>
+  <%= submit_tag("Generate") %>
+<% end %>
+
